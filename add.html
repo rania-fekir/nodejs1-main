@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello to my website</h1>
+    <form id="form">
+      <label for="first">First Number</label>
+      <input id="first" name="first" type="number" step="0.1" /> <br />
+      <label for="second">Second Number</label>
+      <input id="second" name="second" type="number" step="0.1" /> <br />
+      <p id="result"></p>
+      <button id="button" type="submit">Submit</button>
+    </form>
+    <script>
+      var result = document.getElementById('result');
+      var first = document.getElementById('first');
+      var second = document.getElementById('second');
+
+      function caluculate(event) {
+        event.preventDefault();
+        fetch('/add', {
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          method: 'POST',
+          body: JSON.stringify({first: first.value, second: second.value}),
+        }).then(res => {
+          res.json().then(data => {
+            result.innerHTML = 'the result is ' + data.result;
+          });
+        });
+      }
+
+      var form = document.getElementById('form');
+      form.onsubmit = caluculate;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "username": "ahmed",
+    "email": "ahmed@ghldsk.dkg",
+    "age": 25
+  },
+  {
+    "id": 2,
+    "username": "mostapha",
+    "email": "mostapha@ghldsk.dkg",
+    "age": 31
+  },
+  {
+    "username": "rania",
+    "email": "rania.fe06@gmail.com",
+    "age": 20,
+    "id": 3
+  },
+  {
+    "username": "rania",
+    "email": "rania.fe06@gmail.com",
+    "age": 20,
+    "id": 4
+  },
+  {
+    "username": "rania",
+    "email": "rania.fe06@gmail.com",
+    "age": 20,
+    "id": 5
+  },
+  {
+    "username": "rania",
+    "email": "rania.fe06@gmail.com",
+    "age": 20,
+    "id": 6
+  },
+  {
+    "username": "rania",
+    "email": "rania.fe06@gmail.com",
+    "age": 20,
+    "id": 7
+  }
+]
